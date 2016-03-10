@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Leo OS</title>
+
+	<link rel="stylesheet" href="stylesheets/jquery-ui-min.css">
+	<link rel="stylesheet" href="stylesheets/jquery-ui-structure-min.css">
+	<link rel="stylesheet" href="stylesheets/jquery-ui-theme-min.css">
+	<link rel="stylesheet" href="stylesheets/main.css">
+	<link rel="stylesheet" href="stylesheets/calendar.css">
+
+	<!-- Created by Ed Aponte www.eAponte.com -->
+
+</head>
+<body>
+	
+	<header id="taskbar">
+		
+		<button id="menu-btn">Menu</button>
+
+		<span id="date-time"></span>
+
+	</header>
+
+	<nav id="menu-dropdown">
+		
+		<ul>
+			<li class="open-word"><img src="images/ms-word-icon.png">Word Processor</li>
+			<li class="open-sheets"><img src="images/ms-excel-icon.png">Spreadsheets</li>
+			<li class="open-email"><img src="images/ms-outlook-icon.png">Email</li>
+			<li class="open-images"><img src="images/images-icon.png">Image Editor</li>
+			<li class="open-calc"><img src="images/calc-icon.png">Calculator</li>
+			<li class="open-maps"><img src="images/map-icon.png">Maps</li>
+			<li class="open-weather"><img src="images/weather-icon.png">Weather</li>
+			<li class="open-readme"><img src="images/readme-icon.png" title="Read Me">Read Me</li>
+		</ul>
+
+	</nav>
+
+	<div id="desktop">
+
+		<div id="word-window" class="dialog_window" title="Word Processor">
+
+			<textarea style="width: 100%; height: 300px;"></textarea>
+
+		</div> <!-- end word-window -->
+
+		<div id="sheets-window" class="dialog_window" title="Spreadsheets">
+
+			<!-- Online Spreadsheet Goes Here -->
+
+		</div> <!-- end sheets-window -->
+
+		<div id="email-window" class="dialog_window" title="Email">
+
+			<!-- Online Email Goes Here -->
+
+		</div> <!-- end email-window -->
+
+		<div id="images-window" class="dialog_window" title="Image Editor">
+
+			<!-- Online Image Editor Goes Here -->
+
+		</div> <!-- end images-window -->
+
+		<div id="calc-window" class="dialog_window" title="Calculator">
+
+			<!-- Online Calculator Goes Here -->
+
+		</div> <!-- end calc-window -->
+
+		<div id="maps-window" class="dialog_window" title="Maps">
+
+			<!-- Online Maps Go Here -->
+
+		</div> <!-- end maps-window -->
+
+		<div id="weather-window" class="dialog_window" title="Weather">
+
+			<!-- Online Weather Goes Here -->
+
+		</div> <!-- end weather-window -->
+
+		<div id="readme-window" class="dialog_window" title="Read Me">
+
+			<p>
+				Welcome to Leo OS!
+				<br>
+				<a href="http://www.eaponte.com/portfolio/leo-os">http://www.eaponte.com/portfolio/leo-os</a>
+			</p>
+
+			<br>
+
+			<p>
+				Leo OS is a proof-of-concept that with just HTML, CSS, and javascript/JQuery you can build an 
+				interactive, cloud-based, desktop environment or operating system.
+			</p>
+
+			<br>
+
+			<p>
+				All applications are hosted by other websites, but are displayed in a windowed environment 
+				similar to what you would expect from a desktop environment.
+			</p>
+
+			<br>
+
+			<p>
+				All windows are fully draggable and resizeable.
+			</p>
+
+			<br>
+
+			<p>
+				You can view more of my work at <a href="http://www.eaponte.com" target="_blank">eAponte.com</a>
+			</p>
+
+			<br>
+
+			<p>
+				-- Release Notes --
+			</p>
+
+			<br>
+
+			<p>
+				1-13-2016: added random desktop background on page reload
+			</p>
+
+			<br>
+
+			<p>
+				4-17-2015: added Read-Me window
+			</p>
+
+			<br>
+
+			<p>
+				4-14-2015: added date and time refresh every 60 seconds
+			</p>
+
+			<br>
+
+			<p>
+				3-5-2015: first release of Leo-OS
+			</p>
+
+
+		</div> <!-- end readme-window -->
+
+		<footer>
+			
+			<nav id="dock">
+				
+				<ul>
+					<li class="open-word"><img src="images/ms-word-icon.png" title="Word Processor"></li>
+					<li class="open-sheets"><img src="images/ms-excel-icon.png" title="Spreadsheets"></li>
+					<li class="open-email"><img src="images/ms-outlook-icon.png" title="Email"></li>
+					<li class="open-images"><img src="images/images-icon.png" title="Image Editor"></li>
+					<li class="open-calc"><img src="images/calc-icon.png" title="Calculator"></li>
+					<li class="open-maps"><img src="images/map-icon.png" title="Maps"></li>
+					<li class="open-weather"><img src="images/weather-icon.png" title="Weather"></li>
+					<li class="open-readme"><img src="images/readme-icon.png" title="Read Me"></li>
+				</ul>
+
+			</nav>
+
+			<div id="shelf"></div>
+
+		</footer> <!-- end dock and shelf -->
+
+	</div> <!-- end desktop -->
+
+	<!-- JQuery and JQuery UI -->
+
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui-min.js"></script>
+
+	<!-- tinymce for the Word Processor section -->
+
+	<script src="https://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+
+	<!-- Custom js code -->
+
+	<script src="js/main.js"></script>
+
+</body>
+</html>
