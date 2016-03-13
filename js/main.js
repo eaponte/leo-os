@@ -65,9 +65,8 @@ $(document).ready(function() {
 		// Calculator
 		$(".open-calc").click(function() {
 			$("#calc-window").dialog({
-				width: "500", height: "500"
+				width: "450", height: "470"
 			});
-			$("#calc-window").html("<object data='https://www.polymer-project.org/0.5/components/paper-calculator/demo.html'>");
 			$("#menu-dropdown").hide();
 		});
 
@@ -112,6 +111,9 @@ function ChangeBg() {
 
 // Change background on page reload
 	ChangeBg();
+
+// Refresh background image Every 20 Seconds
+	setInterval(ChangeBg, 20000);
 
 function dateTime() {
 	// Date
