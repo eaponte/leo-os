@@ -45,7 +45,8 @@ input[type="reset"] {
 }
 
 input[type="button"].operator {
-	width: 205px;
+	float: right;
+	width: 200px;
 	background-color: #777;
 }
 
