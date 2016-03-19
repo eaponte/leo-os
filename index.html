@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="stylesheets/jquery-ui-theme-min.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
 	<link rel="stylesheet" href="stylesheets/calculator.css">
+	<link rel="stylesheet" href="stylesheets/sketchpad.css">
 
 	<!-- Created by Ed Aponte www.eAponte.com -->
 
@@ -30,7 +31,7 @@
 			<li class="open-word"><img src="images/ms-word-icon.png">Word Processor</li>
 			<li class="open-sheets"><img src="images/ms-excel-icon.png">Spreadsheets</li>
 			<li class="open-email"><img src="images/ms-outlook-icon.png">Email</li>
-			<li class="open-images"><img src="images/images-icon.png">Image Editor</li>
+			<li class="open-images"><img src="images/images-icon.png">Sketchpad</li>
 			<li class="open-calc"><img src="images/calc-icon.png">Calculator</li>
 			<li class="open-maps"><img src="images/map-icon.png">Maps</li>
 			<li class="open-weather"><img src="images/weather-icon.png">Weather</li>
@@ -59,9 +60,37 @@
 
 		</div> <!-- end email-window -->
 
-		<div id="images-window" class="dialog_window" title="Image Editor">
+		<div id="sketchpad-window" class="dialog_window" title="Sketchpad">
 
-			<!-- Online Image Editor Goes Here -->
+			<div id="sketchpad-container">
+
+				<div id="colors">
+
+					<button class="colors" id="colorBlack" type="button" data-color="#191919">Black</button>
+					<button class="colors" id="colorRed" type="button" data-color="#CC0000">Red</button>
+					<button class="colors" id="colorGreen" type="button" data-color="#6DC066">Green</button>
+					<button class="colors" id="colorBlue" type="button" data-color="#0099CC">Blue</button>
+					<button class="colors" id="colorYellow" type="button" data-color="#FFFF66">Yellow</button>
+
+				</div> <!-- end colors -->
+
+				<div id="brush-sizes">
+
+					<button class="brushes" type="button" data-brush="5"><span style="font-size: 25px; vertical-align: top;">&bull;</span> Small</button>
+					<button class="brushes" type="button" data-brush="10"><span style="font-size: 50px; vertical-align: top;">&bull;</span> Med</button>
+					<button class="brushes" type="button" data-brush="15"><span style="font-size: 65px; vertical-align: top;">&bull;</span> Lg</button>
+					<button class="brushes" type="button" data-brush="25"><span style="font-size: 75px; vertical-align: top;">&bull;</span> XL</button>
+
+				</div> <!-- end brush-sizes -->
+
+				<button id="reset" type="button">Start Over</button>
+				<button id="eraser" type="button">Eraser</button>
+
+				<span>&nbsp;Current Setting: <span id="current-color">Black</span>&nbsp;<span id="current-size">&bull;&nbsp;Med</span></span>
+
+				<canvas id="canvas" width="500" height="400"></canvas>
+
+			</div> <!-- end sketchpad-container -->
 
 		</div> <!-- end images-window -->
 
@@ -222,7 +251,7 @@
 					<li class="open-word"><img src="images/ms-word-icon.png" title="Word Processor"></li>
 					<li class="open-sheets"><img src="images/ms-excel-icon.png" title="Spreadsheets"></li>
 					<li class="open-email"><img src="images/ms-outlook-icon.png" title="Email"></li>
-					<li class="open-images"><img src="images/images-icon.png" title="Image Editor"></li>
+					<li class="open-images"><img src="images/images-icon.png" title="Sketchpad"></li>
 					<li class="open-calc"><img src="images/calc-icon.png" title="Calculator"></li>
 					<li class="open-maps"><img src="images/map-icon.png" title="Maps"></li>
 					<li class="open-weather"><img src="images/weather-icon.png" title="Weather"></li>
@@ -249,6 +278,7 @@
 	<!-- Custom js code -->
 
 	<script src="js/main.js"></script>
+	<script src="js/sketchpad.js"></script>
 
 </body>
 </html>

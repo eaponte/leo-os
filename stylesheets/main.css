@@ -160,6 +160,6 @@ object {
 	min-height: 100%;
 }
 
-#word-window, #sheets-window, #images-window, #email-window, #calc-window, #maps-window, #weather-window, #readme-window {
+#word-window, #sheets-window, #sketchpad-window, #email-window, #calc-window, #maps-window, #weather-window, #readme-window {
 	display: none;
 }

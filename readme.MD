@@ -12,4 +12,7 @@ Cloud-Based Operating System: eaponte.com/portfolio/leo-os
 - jQuery and jQuery UI to develop the multi-window interactivity
 
 
+- Custom, local applications imbedded within the windowing system
+
+
 - Remote, web-based applications imbedded within the windowing system

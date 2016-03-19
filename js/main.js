@@ -44,12 +44,11 @@ $(document).ready(function() {
 			$("#menu-dropdown").hide();
 		});
 
-		// Image Editor
+		// Sketchpad
 		$(".open-images").click(function() {
-			$("#images-window").dialog({
-				width: "800", height: "500"
+			$("#sketchpad-window").dialog({
+				width: "540", height: "585"
 			});
-			$("#images-window").html("<object data='https://www.sumopaint.com/app/'>");
 			$("#menu-dropdown").hide();
 		});
 
