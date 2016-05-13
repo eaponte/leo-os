@@ -55,9 +55,9 @@ $(document).ready(function() {
 		// Email
 		$(".open-email").click(function() {
 			$("#email-window").dialog({
-				width: "400", height: "400"
+				width: "1100", height: "650"
 			});
-			$("#email-window").html("<object data='https://accounts.zoho.com/login?&servicename=ZohoMobile&serviceurl=https://mobile.zoho.com'>");
+			$("#email-window").html("<object data='https://eaponte.github.io/email-client-demo/'>");
 			$("#menu-dropdown").hide();
 		});
 
