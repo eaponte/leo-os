@@ -66,6 +66,7 @@ $(document).ready(function() {
 			$("#calc-window").dialog({
 				width: "450", height: "470"
 			});
+			$("#calc-window").html("<object data='https://eaponte.github.io/calculator/'>");
 			$("#menu-dropdown").hide();
 		});
 

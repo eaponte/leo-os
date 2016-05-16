@@ -163,3 +163,7 @@ object {
 #word-window, #sheets-window, #sketchpad-window, #email-window, #calc-window, #maps-window, #weather-window, #readme-window {
 	display: none;
 }
+
+#calc-window {
+	background-color: #40BD9F;
+}
