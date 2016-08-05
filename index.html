@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="stylesheets/jquery-ui-structure-min.css">
 	<link rel="stylesheet" href="stylesheets/jquery-ui-theme-min.css">
 	<link rel="stylesheet" href="stylesheets/main.css">
-	<link rel="stylesheet" href="stylesheets/calculator.css">
-	<link rel="stylesheet" href="stylesheets/sketchpad.css">
 
 	<!-- Created by Ed Aponte www.eAponte.com -->
 
@@ -62,37 +60,9 @@
 
 		<div id="sketchpad-window" class="dialog_window" title="Sketchpad">
 
-			<div id="sketchpad-container">
+			<!-- Online Sketchpad Goes Here -->
 
-				<div id="colors">
-
-					<button class="colors" id="colorBlack" type="button" data-color="#191919">Black</button>
-					<button class="colors" id="colorRed" type="button" data-color="#CC0000">Red</button>
-					<button class="colors" id="colorGreen" type="button" data-color="#6DC066">Green</button>
-					<button class="colors" id="colorBlue" type="button" data-color="#0099CC">Blue</button>
-					<button class="colors" id="colorYellow" type="button" data-color="#FFFF66">Yellow</button>
-
-				</div> <!-- end colors -->
-
-				<div id="brush-sizes">
-
-					<button class="brushes" type="button" data-brush="5"><span style="font-size: 25px; vertical-align: top;">&bull;</span> Small</button>
-					<button class="brushes" type="button" data-brush="10"><span style="font-size: 50px; vertical-align: top;">&bull;</span> Med</button>
-					<button class="brushes" type="button" data-brush="15"><span style="font-size: 65px; vertical-align: top;">&bull;</span> Lg</button>
-					<button class="brushes" type="button" data-brush="25"><span style="font-size: 75px; vertical-align: top;">&bull;</span> XL</button>
-
-				</div> <!-- end brush-sizes -->
-
-				<button id="reset" type="button">Start Over</button>
-				<button id="eraser" type="button">Eraser</button>
-
-				<span>&nbsp;Current Setting: <span id="current-color">Black</span>&nbsp;<span id="current-size">&bull;&nbsp;Med</span></span>
-
-				<canvas id="canvas" width="500" height="400"></canvas>
-
-			</div> <!-- end sketchpad-container -->
-
-		</div> <!-- end images-window -->
+		</div> <!-- end sketchpad-window -->
 
 		<div id="calc-window" class="dialog_window" title="Calculator">
 
@@ -123,15 +93,21 @@
 			<br>
 
 			<p>
-				Leo OS is a proof-of-concept that with just HTML, CSS, and javascript/JQuery you can build an 
+				Leo OS is a proof-of-concept that with just HTML, CSS, and javascript/jQuery you can build an 
 				interactive, cloud-based, desktop environment or operating system.
 			</p>
 
 			<br>
 
 			<p>
-				All applications are hosted by other websites, but are displayed in a windowed environment 
+				Some applications are hosted by other websites, but are displayed in a windowed environment 
 				similar to what you would expect from a desktop environment.
+			</p>
+
+			<br>
+
+			<p>
+				Other applications (email client demo, sketchpad, and calculator) are my own self-developed apps.
 			</p>
 
 			<br>
@@ -155,11 +131,19 @@
 			<br>
 
 			<p>
+				8-5-2016:<br>
+				- removed sketchpad code<br>
+				- added link to my sketchpad app hosted on github pages
+			</p>
+
+			<br>
+
+			<p>
 				5-16-2016:<br>
 				- removed link to remote email app<br>
 				- add link to my self-developed email demo app<br>
 				- removed link to remote image editor<br>
-				- add link to my self-developed sketchpad app
+				- added code of my self-developed sketchpad app
 			</p>
 
 			<br>
@@ -234,7 +218,6 @@
 	<!-- Custom js code -->
 
 	<script src="js/main.js"></script>
-	<script src="js/sketchpad.js"></script>
 
 </body>
 </html>

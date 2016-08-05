@@ -1,4 +1,4 @@
-Cloud-Based Operating System: eaponte.com/portfolio/leo-os
+Cloud-Based Operating System: http://eaponte.com/portfolio/leo-os
 
 
 

@@ -47,8 +47,9 @@ $(document).ready(function() {
 		// Sketchpad
 		$(".open-images").click(function() {
 			$("#sketchpad-window").dialog({
-				width: "540", height: "585"
+				width: "600", height: "650"
 			});
+			$("#sketchpad-window").html("<object data='https://eaponte.github.io/sketchpad/'>");
 			$("#menu-dropdown").hide();
 		});
 
@@ -64,7 +65,7 @@ $(document).ready(function() {
 		// Calculator
 		$(".open-calc").click(function() {
 			$("#calc-window").dialog({
-				width: "450", height: "470"
+				width: "460", height: "480"
 			});
 			$("#calc-window").html("<object data='https://eaponte.github.io/calculator/'>");
 			$("#menu-dropdown").hide();
