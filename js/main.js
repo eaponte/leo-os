@@ -47,7 +47,7 @@ $(document).ready(function() {
 		// Sketchpad
 		$(".open-images").click(function() {
 			$("#sketchpad-window").dialog({
-				width: "600", height: "650"
+				width: "600", height: "660"
 			});
 			$("#sketchpad-window").html("<object data='https://eaponte.github.io/sketchpad/'>");
 			$("#menu-dropdown").hide();
@@ -76,7 +76,7 @@ $(document).ready(function() {
 			$("#maps-window").dialog({
 				width: "1000", height: "525"
 			});
-			$("#maps-window").html("<object data='https://www.here.com/'>");
+			$("#maps-window").html("<object data='https://eaponte.github.io/maps/'>");
 			$("#menu-dropdown").hide();
 		});
 
